@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Resume
+Welcome to my resume
 
-## Getting Started
+## Dependencies
+* Node.js 10.13.0 or later
 
-First, run the development server:
+## Installation
+Install all packages using `yarn install`
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
+Start the application in development mode using `yarn dev`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Navigate to [localhost:3000](http://localhost:3000) to run and debug the application
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+>If you are using VSCode you can press <kbd>F5</kbd> to start debugging
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Linting
+To lint the your code run `yarn lint`
 
-## Learn More
+>If you are using VSCode your code will be automatically linted on file save
 
-To learn more about Next.js, take a look at the following resources:
+### Production
+To create a production build use `yarn build`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To start the generated production build use `yarn start`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Docker
+To create a deployable docker image use `docker build . -t resume`
 
-## Deploy on Vercel
+To start the generated docker image use `docker run -p 3000:3000 resume`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Built With
+*  [Next.js](https://nextjs.org/) by Vercel - The React Framework

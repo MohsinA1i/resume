@@ -1,3 +1,16 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "indent": "off",
+    "quotes": "off",
+    "semi": "off",
+    "jsx-quotes": ["warn", "prefer-single"],
+    "@typescript-eslint/indent": [ "warn" ],
+    "@typescript-eslint/quotes": [ "warn", "single", { "allowTemplateLiterals": true } ],
+    "@typescript-eslint/semi": ["warn"]
+  }
 }
