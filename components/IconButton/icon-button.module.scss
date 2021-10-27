@@ -1,0 +1,14 @@
+@import 'styles/variables.scss';
+
+.icon-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #7F7F7F;   
+    -webkit-tap-highlight-color: transparent;
+}
+
+.icon-button:hover {
+    color: #FFFFFF;
+}

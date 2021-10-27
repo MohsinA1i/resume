@@ -1,0 +1,14 @@
+@import 'styles/mixins.scss';
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    overflow-y: scroll;
+    @include scrollbars(10px, #1D1D1D, #242424);
+}   

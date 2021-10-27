@@ -1,0 +1,50 @@
+$breakpoint-up: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$breakpoint-down: (
+  xs: 575.98px,
+  sm: 767.98px,
+  md: 991.98px,
+  lg: 1199.98px,
+  xl: 1399.98px,
+);
+
+@mixin size-and-up($size) {
+  $breakpoint: map-get($breakpoint-up, $size);
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin size-and-down($size) {
+  $breakpoint: map-get($breakpoint-down, $size);
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

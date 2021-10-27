@@ -1,0 +1,28 @@
+@import 'styles/variables.scss';
+
+.section {
+    position: relative;
+    height: 1200px;
+    background: $background-color;
+    z-index: -2;
+}
+
+.background {
+    position: absolute;
+    box-shadow: 0px 0px 10vw 10vw #000000 inset;
+    z-index: -1;
+}
+
+.content {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 0.5rem;
+    color: $text-color;
+}
+
+.sub-heading {
+    color: $alternate-text-color;
+}

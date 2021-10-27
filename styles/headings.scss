@@ -1,0 +1,47 @@
+@import 'mixins.scss';
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    @include size-and-up(sm) {
+        font-size: 4rem;
+    }
+
+    @include size-and-up(md) {
+        font-size: 5rem;
+    }
+
+    @include size-and-up(lg) {
+        font-size: 6rem;
+    }
+
+    @include size-and-up(xl) {
+        font-size: 7rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
